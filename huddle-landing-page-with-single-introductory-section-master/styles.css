@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Global Styles and resets */
+
+*{
+    margin:0;
+    padding:0;
+	box-sizing:border-box;
+}
+
+html{
+	font-family:Poppins,sans-serif;
+	font-size:10px;
+}
+
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+
+img{
+    width:100%;
+    max-width:100%;
+    height:auto;
+}
+
+/* Body Styles */
+
+body{
+    padding: 3rem;
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+}
+
+/* Header and logo */
+
+.logo{
+    width: 15rem;
+}
+
+/* Main section */
+
+.hero-img{
+    margin: 3rem 0;
+}
+
+
+h1{
+    font-size: 2.8rem;
+    text-align: center;
+    color: #fff;
+}
+
+p{
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #fff;
+}
+
+/* Call to actions  */
+
+.cta{
+    display: flex;
+    align-items: center;
+}
+
+button{
+    min-width:30%;
+    width: 80%;
+    max-width: 80%;
+    margin: 2rem auto;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.6rem;
+    color: hsl(257, 40%, 49%);
+    padding: 1.5rem 0;
+    border: none;
+    border-radius: 6rem;
+    box-shadow:
+    0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+
+.social{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.social a{
+   margin: 0.5rem;
+}
+
+.social img{
+    width: 3rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a {color: rgb(41, 219, 10); }
+
+
+/* Media queries for screen 1000px to 1400px*/
+
+@media only screen and (min-width: 1000px) {
+    body {
+        background-image: url(images/bg-desktop.svg);
+
+        padding: 3% 8%;
+    }
+
+    main{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5rem;
+        align-items: center;
+    }
+
+    .hero-img{
+        width: 180rem;
+    }
+
+    button{
+        width: 30%;
+        margin-left: 5rem
+    }
+
+    h1{
+        font-size: 3.5rem;
+        text-align: left;
+        margin-left: 5rem;
+    }
+
+    p{
+        text-align: left;
+        margin-left: 5rem;
+        padding: 1.5rem 0;
+        
+    }
+
+    .social{
+        justify-content: flex-end;
+    }
+
+  }
+
+/* Media queries for screen 1400px and up (desktop)  */
+
+  @media only screen and (min-width: 1400px){
+
+
+       h1{
+           font-size: 3.8rem;
+       }
+
+       p{
+        padding: 5rem 0;
+        font-size: 2rem;
+    }
+
+    button{
+        padding:1rem;
+        font-size:1.6rem ;
+    }
+  }
+
